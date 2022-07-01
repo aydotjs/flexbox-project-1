@@ -1,0 +1,97 @@
+/* ========================
+    NORMALIZING MY WEBPAGE
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ========================
+   STYLING THE NAV
+=========================== */
+body {
+  line-height: 1.5;
+}
+nav {
+  height: 60px;
+  background-color: #0724b8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+nav h4 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Sacramento", cursive;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: skyblue;
+  border-bottom: 2px solid skyblue;
+}
+/* ========================
+    STYLING THE HEADER
+=========================== */
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  position: relative;
+  background: url("https://images.pexels.com/photos/10816120/pexels-photo-10816120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 1, 0, 0.8);
+}
+header img {
+  max-width: 300px;
+  height: auto;
+}
+header h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+header p {
+  color: white;
+  font-size: 2rem;
+}
+header div,
+img {
+  position: relative;
+  z-index: 5;
+}
+/* ========================
+    STYLING THE CARDS
+=========================== */
+section {
+  display: flex;
+  padding: 20px 80px;
+}
+section div {
+  height: 200px;
+  flex: 1;
+  box-shadow: 2px 2px 5px 2px black;
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 15px;
+  padding: 30px;
+}
